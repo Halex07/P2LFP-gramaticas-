@@ -1,0 +1,14 @@
+digraph grafica{
+rankdir=LR;
+S3 [shape = doublecircle];
+S0 [shape = circle, style = filled, fillcolor = yellow];
+"Inicio" [shape = plaintext];
+"Inicio" -> S0
+S0 -> S1 [label = "$,$;#", color = red]
+S1 -> S1 [label = "x,$;x"]
+S1 -> S2 [label = "y,x;$"]
+S2 -> S2 [label = "y,x;$"]
+S2 -> S3 [label = "$,#;$"]
+
+tabla[shape=plaintext,fontsize=12, label=<<TABLE BORDER="1"><TR><TD>Pila: { # }</TD></TR><TR><TD>Entrada: {  }</TD></TR></TABLE>>];
+}
